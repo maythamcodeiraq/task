@@ -91,7 +91,7 @@ html {
 /*....................header .....................*/
 .write-continer{
     position: relative;
-    margin-top: 30rem ;
+    margin-top: 30vh ;
     color: #fff ;
     font-size: 5rem ;
     text-align: right ;  
@@ -99,7 +99,7 @@ html {
 
 @media only screen and (max-width: 109.375em) { 
    .write-continer{
-      margin-top:40rem ;
+      margin-top:35vh ;
       font-size: 6rem ;
 
 }
@@ -402,7 +402,7 @@ html {
 }
 
 .search_big{
-    top: 65%;
+    top: 60vh;
     left: 50%;
     transform: translate(-65% ,-65%);
 }
