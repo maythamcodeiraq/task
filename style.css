@@ -44,6 +44,12 @@ html {
     }
 }
 
+@media only screen and (max-width: 1500px) { 
+    html {
+        font-size: 40% ;
+    }
+}
+
 
 
 
@@ -407,6 +413,14 @@ html {
     transform: translate(-65% ,-65%);
 }
 
+@media only screen and (max-height: 750px) { 
+    .search_big{
+        top: 70vh;
+      
+    }
+}
+
+
 .search__input_big:focus { outline: none;
     width: 150%;
     transform: translatey(-1rem) ;
@@ -560,7 +574,7 @@ html {
     top: 50%;
     transform: scale(.0005) translatey(-50%);
     z-index: 10000 ;
-    height: 65vh;
+    height: auto;
     width: 70vw ;
     background-color: #fff ;
     color: black ;
