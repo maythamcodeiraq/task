@@ -1,6 +1,22 @@
+/*....................responsivedesign .....................*/
+/*....................responsivedesighn .....................*/
+/*....................responsivedesighn .....................
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    /600px/
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };      /900px/
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };   /1200px/
+    }
+    @if $breakpoint == normal-desktop {
+        @media only screen and (min-width: 103.125em) { @content };   / 1800/
+    }
+}
 
-
-
+*/
 /*....................basic set .....................*/
 /*....................basic set .....................*/
 /*....................basic set .....................*/
@@ -21,8 +37,13 @@ html {
 	font-weight: normal;
     font-style: normal;
     background-color: #fff ;
-
 }
+@media only screen and (max-width: 109.375em) { 
+    html {
+        font-size: 50% ;
+    }
+}
+
 
 
 
@@ -70,10 +91,19 @@ html {
 /*....................header .....................*/
 .write-continer{
     position: relative;
-    top:30vh ;
+    margin-top: 30rem ;
     color: #fff ;
     font-size: 5rem ;
     text-align: right ;  
+}
+
+@media only screen and (max-width: 109.375em) { 
+   .write-continer{
+      margin-top:40rem ;
+      font-size: 6rem ;
+
+}
+
 }
 
 .write-1{
@@ -88,7 +118,7 @@ html {
 
 
 .ganeral_item {
-    height: 12vh;
+    height: 12rem;
     width: 100vw;
     background-color: rgb(44, 62, 80) ;
     margin-top: -1rem ;
@@ -137,21 +167,19 @@ html {
 .footer{
     margin-top: 5vh ;
     width: 100%;
-    height: 30vh;
+    height: 275px;
     background-color: #2f3640 ;
     display: flex ;
     justify-content: space-between ;
 }
 
 .logo{
-    margin-top: 2rem ;
-}
-.logo:hover{
-}
+    margin-top: 50px ;
 
+}
 
 .logo_img{
-    height: 25rem;
+    height: 20rem;
 }
 
 .copyright{
@@ -164,7 +192,7 @@ html {
 }
 
 .footer_nav{
-    margin-top: 11% ;
+    margin-top: 12% ;
     margin-left: 10rem ;
     width:20vw ;
     font-size: 2rem ;
@@ -200,12 +228,12 @@ html {
 
 .btn {
     position: absolute;
-    font-size: 5rem ;
+    font-size: 4.5rem ;
     color: #fff ;
     cursor: pointer;
-    border-radius: 10px ;
+    border-radius: 7px ;
     text-align: center ;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 
@@ -231,15 +259,15 @@ html {
 .btn_blue{
     background-color: rgba(44, 62, 80,0.9) ;
     padding: 0 ;
-    height: 10vh;
-    width: 15vw;
+    height: 10rem;
+    width: 27.5rem;
     transition: all 0.4s ;
 }
 
 .btn_orange{
     background-color: rgba(230, 125, 34, 0.9) ;
-    height: 12vh;
-    width: 20vw;
+    height: 12rem;
+    width: 33rem;
 }
 
 
@@ -326,9 +354,9 @@ html {
 
 .btn-10{
     right: 10vw;
-    height: 7vh;
-    width: 10vw ;
-    font-size: 250% ;
+    height: 7rem;
+    width: 19.25rem ;
+    font-size: 3rem ;
 }
 
 
@@ -337,7 +365,7 @@ html {
     position: absolute;
     display: inline ;
     top:  0 ;
-    left: 8rem ;
+    left: 1vw ;
 }
 
 .search__input {
@@ -370,12 +398,13 @@ html {
 .search__input_big{
     width: 125%;
     height: 7.5rem;
-    font-size: 6em ;
+    font-size: 6rem ;
 }
 
 .search_big{
-    top: 50vh;
-    left: 25vw;
+    top: 65%;
+    left: 50%;
+    transform: translate(-65% ,-65%);
 }
 
 .search__input_big:focus { outline: none;
