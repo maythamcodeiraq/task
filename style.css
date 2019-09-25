@@ -342,8 +342,8 @@ html {
 
 .btn-11,
 .btn-12{
- width: 1px;
- height:1px;
+ width: .00005px;
+ height:.00005px;
  font-size: 0rem ;
  position: absolute ;
 }
@@ -357,7 +357,17 @@ html {
     top: 2rem ;
     left: 5rem;
 }
-
+@media only screen and (max-width: 1000px) { 
+    .btn-11{
+        top: 2rem ;
+        left: 15rem;
+    }
+    
+    .btn-12{
+        top: 2rem ;
+        left: 2rem;
+    }
+}
 .btn-10{
     right: 10vw;
     height: 7rem;
@@ -474,7 +484,7 @@ html {
     margin-top:10vh ;
     margin-left: 5vw ;
     width: 30vw ;
-    height: 25vh;
+    height: 20rem;
     background-color: rgba(236, 240, 241, 0.418) ;
     border-radius: 3px ;
     box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
@@ -534,11 +544,11 @@ html {
 
 }
 
-/*gps*/
+/*GPS OF SCHOOL*/
 .mapouter{position:relative;
     position: absolute ;
     top: 7.9rem ;
-    height:60%;
+    height:13.5rem;
     width:99%;
     border-radius: 5px ;
 
@@ -547,7 +557,7 @@ html {
 #gmap_canvas {
     overflow:hidden;
         background:none!important;
-        height:60%;
+        height:13.5rem;
         width:99%;
 }
 
