@@ -244,6 +244,7 @@ html {
 
 .btn:hover::before {
     width: 110%;
+    height: 105% ;
 }
 
 .btn_blue{
