@@ -76,7 +76,7 @@ function clickItem ( x) {
       for (var i = 1; i <= 4; i++) {
          document.querySelector('.btn-'+ i).style.border='none';
       }
-      document.querySelector('.btn-'+ x).style.border='5px solid rgba(44, 62, 80,0.9)';
+      document.querySelector('.btn-'+ x).style.border='2px solid rgba(44, 62, 80,0.9)';
       flocation =" " ;
       flocation =  document.querySelector('.btn-'+ x).textContent;
       
@@ -91,7 +91,7 @@ function clickItem01 (x){
    for (var i = 13; i <=14; i++) {
       document.querySelector('.btn-'+ i).style.border='none';
    }
-   document.querySelector('.btn-'+x).style.border='3px solid rgba(230, 125, 34, 0.9)';
+   document.querySelector('.btn-'+x).style.border='1.5px solid rgba(230, 125, 34, 0.9)';
    Type =" " ;
    Type =  document.querySelector('.btn-'+x).textContent;
    finallocation = flocation + '/'+ Type +'/' + slocation + '/'+thlocation ;

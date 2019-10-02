@@ -1,22 +1,5 @@
-/*....................responsivedesign .....................*/
-/*....................responsivedesighn .....................*/
-/*....................responsivedesighn .....................
-@mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    /600px/
-    }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };      /900px/
-    }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };   /1200px/
-    }
-    @if $breakpoint == normal-desktop {
-        @media only screen and (min-width: 103.125em) { @content };   / 1800/
-    }
-}
 
-*/
+
 /*....................basic set .....................*/
 /*....................basic set .....................*/
 /*....................basic set .....................*/
@@ -60,7 +43,7 @@ html {
 
 .header{
     height: 96vh;
-    background-image: linear-gradient(to right bottom,rgba(52, 73, 94,0.8), rgba(44, 62, 80,0.8)), url(school.jpg);
+    background-image: linear-gradient(to right bottom,rgba(52, 73, 94,0.8), rgba(44, 62, 80,0.8)), url('/img/school.jpg');
     background-size: contain ;
     background-position: top;
     display: flex ;
@@ -240,6 +223,7 @@ html {
     border-radius: 7px ;
     text-align: center ;
     text-decoration: none;    
+    overflow: hidden;
 }
 
 
@@ -259,7 +243,7 @@ html {
 }
 
 .btn:hover::before {
-    width: 100%;
+    width: 110%;
 }
 
 .btn_blue{
@@ -560,6 +544,41 @@ html {
         height:13.5rem;
         width:99%;
 }
+/*....................back-icon.....................*/
+
+.re-load{
+    width: 9rem ;
+    height: 9rem;
+    position: fixed;
+    border-radius: 100rem ;
+    top: 14% ;
+    right:4% ;
+    z-index: 1000 ;
+    transition:all   0.4s ;
+    display: flex ;
+    justify-content: center ; 
+    text-align: center ;
+    transition: all 0.4s ;
+
+}
+.icon-back{
+    width: 7rem ;
+    height: 7rem;
+    background-image: url('/img/left-arrow-dark') ;
+    background-size: cover;
+    background-position: center ;
+    transform: translateY(1rem) rotate(180deg);
+    transition: all 0.4s ;
+}
+
+.re-load:hover{
+    background-color: rgb(230, 125, 34) ;
+    transform: translateY(-.2rem);
+}
+.re-load:hover .icon-back{
+    background-image: url('img/left-arrow\ -white') ;
+}
+
 
 
 /*....................popup-window.....................*/
@@ -661,9 +680,6 @@ html {
 }
 
 }
-
-
-
 
 
 
