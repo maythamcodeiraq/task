@@ -266,7 +266,6 @@ html {
 .btn_orange:visited
 {
 
-    box-shadow: 2px 2px 6px rgba(166, 207, 248, 0.9);
     transform: translateY(-3px);
     color:rgb(31, 31, 31);
     transition: all 0.4s ;
@@ -274,7 +273,6 @@ html {
 }
 
 .btn_blue:hover {
-    box-shadow: 2px 2px 8px rgba(230, 125, 34, 0.3);
     transform: translateY(-3px);
     transition: all 0.4s ;
     color:rgb(31, 31, 31);
