@@ -43,7 +43,7 @@ html {
 
 .header{
     height: 96vh;
-    background-image: linear-gradient(to right bottom,rgba(52, 73, 94,0.8), rgba(44, 62, 80,0.8)), url('/img/school.jpg');
+    background-image: linear-gradient(to right bottom,rgba(52, 73, 94,0.8), rgba(44, 62, 80,0.8)), url('../img/school.jpg');
     background-size: contain ;
     background-position: top;
     display: flex ;
@@ -564,7 +564,7 @@ html {
 .icon-back{
     width: 7rem ;
     height: 7rem;
-    background-image: url('/img/left-arrow-dark') ;
+    background-image: url('../img/left-arrow-dark.png') ;
     background-size: cover;
     background-position: center ;
     transform: translateY(1rem) rotate(180deg);
@@ -576,7 +576,7 @@ html {
     transform: translateY(-.2rem);
 }
 .re-load:hover .icon-back{
-    background-image: url('img/left-arrow\ -white') ;
+    background-image: url('../img/left-arrow\ -white.png') ;
 }
 
 
